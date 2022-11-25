@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Icono de la página -->
+    <link rel="icon" href="imagenes/mr-log.png">
+    <title>MauriRod's Life</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Libreria de botones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link de los estilos de mi CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg  bg-dark navbar-dark">
+        <div class="container-fluid">
+            <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="imagenes/maurirod.jpg" alt="Logo" width="45" height="45" class="d-inline-block align-text-center" style="border-radius: 25px;">
+            MauriRod
+          </a>
+          <!-- Navegacion del centro -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#perfil"><i class="bi bi-person-circle"></i> Perfil </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#certificaciones"><i class="bi bi-patch-check-fill"></i> Certificaciones<span class=" position-absolute top-1 start-90 translate-middle badge rounded-pill bg-danger">+99</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#habilidades"><i class="bi bi-archive-fill"></i> Habilidades<span class=" position-absolute top-1 start-90 translate-middle badge rounded-pill bg-info">+10</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#portafolios"><i class="bi bi-card-heading"></i> Portafolios <span class=" position-absolute top-1 start-90 translate-middle badge rounded-pill bg-success">+99</span></a>
+            </li>                        
+          </ul>
+          <!-- Botones de busqueda -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+    </nav>
+    
+
+    <!-- Overlay -->
+    <section class="">
+      <div class="card text-bg-dark">
+        <img src="imagenes/webprofesional.jpg" class="card-img" alt="programador">
+        <div class="card-img-overlay">
+          <h2 class="card-title position-absolute top-50 start-50 translate-middle text-center display-4 fw-bold">Hola, soy MauriRod. Diseño y construyo interfaces de usuarios.</h2>
+          <p class="card-text position-absolute bottom-0 start-50 translate-middle-x fw-bold"><small>Actualizado hace 10 minutos</small></p>
+        </div>
+      </div>
+    </section>
+    <!-- Datos generales -->    
+    <section class=" p-5" id="perfil">
+        <div class="container">          
+          <div class="row g-4">
+            <!-- primera columna -->
+            <div class="col-md">
+              <h2 class="text-center mb-4 bg-success rounded p-1 text-white text-uppercase">Información del Estudiante</h2>
+              <img src="/imagenes/mau.png" class="rounded-circle w-50 img-fluid mx-auto d-block" alt="MauriRod">                                         
+              <ul class="list-group list-group-flush p-3">                                      
+                <li class="list-group-item"><span class="fw-bold">Nombres:</span> Mauricio Antonio</li>
+                <li class="list-group-item"><span class="fw-bold">Apellidos:</span> Rodríguez Jiménez</li>
+                <li class="list-group-item"><span class="fw-bold">Correo:</span> <a href="mailto:mauricio.rodriguez4@catolica.edu.sv" style="text-decoration: none;">mauricio.rodriguez4@catolica.edu.sv</a></li>                        
+                <li class="list-group-item"><span class="fw-bold">Carrera:</span> Ingeniería en Sistemas Informáticos</li>
+              </ul>
+              <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Más de Mauricio</button>
+              <!-- Canvas -->
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><span class="fw-bold p-2 bg-warning rounded text-light"> "<--!HELLO WORLD-->"</span></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <hr>
+                <div class="offcanvas-body">
+                  <h4>INTRODUCCIÓN</h4>
+                  <!-- imagen mía lateral -->
+                  <img src="imagenes/mauricio.jpg"  class ="mt-2 mb-4 rounded w-75 " alt="">                  
+                  <p class="lead bg-primary text-light rounded p-2">Hola programadores, soy una persona apasionada por la programación, este ciclo conocí la
+                    programación web, es algo que nunca pense que me iba a gustar demasiado. En vacaciones aprendi HTML5 
+                    y un poco de CSS.
+                  </p>
+                  <!-- Progreso de mi carrera en porcentaje -->
+                  <h6 class="p-1">Progreso de mi carrera</h6>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%</div>                
+                  </div>
+                  <br>
+                  <!-- Mis redes sociales -->                                    
+                  <div class="container">
+                    <h2 class="p-2 mt-2 text-center text-bg-dark">Mis redes sociales</h2>
+                    <section class="wrapper">
+                      <!-- Botones utilizados en cada DIV -->
+                      <div class="button">
+                        <a href=""></a>                          
+                          <div class="icon"><i class="bi bi-github"></i></div>
+                          <span><a href="https://github.com/mauriciorodriguez4" target="_blank" class="text-decoration-none" style="color: #333 ;">GitHub</a></span>                            
+                      </div>
+                      <div class="button">
+                          <div class="icon"><i class="bi bi-vimeo"></i></div>
+                          <span><a href="https://www.udemy.com/user/mauricio-antonio-rodriguez-jimenez/" class="text-decoration-none" style="color: #c034f4 ;">Udemy</a></span>
+                      </div>
+                      <div class="button">
+                          <div class="icon"><i class="bi bi-google"></i></div>
+                          <span><a href="https://drive.google.com/drive/folders/1lbJdmJLdFc-l-SK7TBzDP3FD8p-qSeTn" class="text-decoration-none" style="color: #ff0000 ;">Google</a></span>
+                      </div>
+                  </section>
+                  </div>
+                </div>
+              </div>                         
+            </div>
+            <!-- linea de en medio -->
+            <div class="vr bg-info"></div>
+            <!-- Segunda columna -->
+            <div class="col-md">
+              <h2 class="text-center mb-4 text-uppercase bg-primary p-1 rounded text-light">Grado Academico</h2>                            
+              <!-- Info personal acordeón -->
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Profesión
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      La carrera de <strong>Ingeniería en Sistemas Informáticos</strong> 
+                      busca formar profesionales capaces de resolver problemas de tecnologías de la información, aplicando conocimientos científicos, técnicos y éticos en las empresas, contribuyendo con ello al desarrollo tecnológico del país. El ingeniero en este campo deberá diseñar, implementar y mantener sistemas electrónicos para el procesamiento de datos y transmisión de los mismos, sistemas para Internet y programación de dispositivos móviles de información, utilizando lenguajes de programación científicos y comerciales, aplicando estándares de seguridad informática.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Universidad
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      La <strong>Universidad Católica de El Salvador</strong> ofrece esta carrera para aquellos que poseen un interés especial por el desarrollo de aplicaciones informáticas, la elaboración y mejora de los softwares y sistemas de información, así como por la innovación tecnológica en general.                      
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      ¿De qué trata la carrera?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <strong>Esta carrera tiene como objetivos/responsabilidad</strong> de administrar todos aquellos recursos tecnológicos y resguardar la información valiosa de las organizaciones, por el nivel de confianza depositado en la gestión de información de las instituciones debe conducirse con ética y profesionalismo en el desempeño de sus funciones, realizando sus tareas con principios y valores.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Cursos -->
+    <section class="p-5">
+      <h2 class="text-center p-2 mb-3 fw-bold text-uppercase">Cursos</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">    
+        <div class="col">
+          <div class="card">
+            <img src="imagenes/html_css_javascript.jpeg" class="card-img-top" alt="html-css-js">
+            <div class="card-body">
+              <h5 class="card-title">Cursos de desarrollo web</h5>
+              <p class="card-text">Desarrollo web significa construir y mantener sitios web; es el trabajo que tiene lugar en un segundo plano y que permite que una web tenga una apariencia impecable, un funcionamiento rápido y un buen desempeño para permitir la mejor experiencia de usuario.</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><span class="fw-bold">Lugar:</span> Universidad Católica de El Salvador.</li>
+                <li class="list-group-item"><span class="fw-bold">Objetivo del curso:</span> Crear páginas web.</li>
+                <li class="list-group-item"><span class="fw-bold">Impartidor:</span> Ing. José Emerson de León.</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://meet.google.com" target="__blank" class="card-link">Meet link</a>
+                <a href="https://zoom.us" target="_blank" class="card-link">Zoom link</a>
+              </div>
+              <div class="card-footer text-muted text-center">
+                2 days ago
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imagenes/csharp-800x445.jpg" class="card-img-top" alt="C#">
+            <div class="card-body">
+              <h5 class="card-title">CSharp</h5>
+              <p class="card-text">C# permite a los desarrolladores crear muchos tipos de aplicaciones seguras y sólidas que se ejecutan en .NET. C# tiene sus raíces en la familia de lenguajes C, y a los programadores de C, C++, Java y JavaScript les resultará familiar inmediatamente.</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><span class="fw-bold">Lugar:</span> Universidad Católica de El Salvador.</li>
+                <li class="list-group-item"><span class="fw-bold">Objetivo del curso:</span> Crear aplicaciones de escritorio.</li>
+                <li class="list-group-item"><span class="fw-bold">Impartidor:</span> Ing. Gabriel Fernando García Lemus.</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://meet.google.com" target="__blank" class="card-link">Meet link</a>
+                <a href="https://zoom.us" target="_blank" class="card-link">Zoom link</a>
+              </div>
+              <div class="card-footer text-muted text-center">
+                2 days ago
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imagenes/python-logo-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">Python es un lenguaje de programación potente y fácil de aprender. Tiene estructuras de datos de alto nivel eficientes y un simple pero efectivo sistema de programación orientado a objetos. La elegante sintaxis de Python y su tipado dinámico.</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><span class="fw-bold">Lugar:</span> Universidad Católica de El Salvador.</li>
+                <li class="list-group-item"><span class="fw-bold">Objetivo del curso:</span> Creación de aplicaciones</li>
+                <li class="list-group-item"><span class="fw-bold">Impartidor:</span> Ing. Rafael Leonardo Jiménez</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://meet.google.com" target="__blank" class="card-link">Meet link</a>
+                <a href="https://zoom.us" target="_blank" class="card-link">Zoom link</a>
+              </div>
+              <div class="card-footer text-muted text-center">
+                2 days ago
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imagenes/Aprende-Swift-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Swift</h5>
+              <p class="card-text">Swift es un lenguaje de programación de Apple, en lenguaje moderno, creado para desarrollo de software para iOS, Mac OS X, iPad, iPhone, Apple TV y Apple Watch. Fue presentado en 2014 en la WWDC, aunque su creación comenzó en el año 2010. Es capaz de usar cualquier biblioteca programada en Objective-C</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><span class="fw-bold">Lugar:</span> Universidad Católica de El Salvador.</li>
+                <li class="list-group-item"><span class="fw-bold">Objetivo del curso:</span> Crear aplicaciones para iOS y MacOS.</li>
+                <li class="list-group-item"><span class="fw-bold">Impartidor:</span> Ing. Mauricio Rodríguez Jiménez</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://meet.google.com" target="__blank" class="card-link">Meet link</a>
+                <a href="https://zoom.us" target="_blank" class="card-link">Zoom link</a>
+              </div>
+              <div class="card-footer text-muted text-center">
+                2 days ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificaciones ganados -->
+    <section class="p-5 bg-success" id="certificaciones">
+      <div class="container">
+        <div class="d-md-flex align-items-center justify-content-between">
+            <img src="imagenes/Certificacion_word.png" class="img-fluid w-50 m-2" alt="fundamentals">
+            <div class="col-md">
+                <h2 class="text-bg-success p-2">MI PRIMER CERTIFICADO</h2>
+                <p class="lead text-bg-success">
+                  Mi primer certificado lo obtuve en el año 2021, un ingeniero abrió un curso en Udemy, y aproveche la oportunidad de aprender a manejar Word con la mayoría de sus componentes en un nivel intermedio. Enseñó cosas como hacer un índice, una portada a nivel academico.
+                </p>
+                <a href="https://www.udemy.com/course/curso-practico-de-microsoft-word/learn/lecture/26831646?start=28#overview" target="_blank" class="btn btn-dark mt-3">
+                    <i class="bi bi-chevron-right"></i>
+                    Leer más...
+                </a>
+            </div>
+        </div>            
+    </div>
+    </section>
+    <!-- Habilidades de progrmación -->
+    <section class="p-5" id="habilidades">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">            
+            <h2 class="text-center mb-4">Habilidades de programación</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><span class="fw-bold">✅</span> Conocimiento de la programación Orientada a objetos.  </li>
+              <li class="list-group-item"><span class="fw-bold">✅</span> Dominio de lenguajes para la programación en frontend como HTML, CSS,  y un poco de JavaScript.</li>
+              <li class="list-group-item"><span class="fw-bold">✅</span> Manejo de lenguajes para administrar bases de datos como mySQL.</li>
+              <li class="list-group-item"><span class="fw-bold">✅</span> Ser proactivo, tener iniciativa y ganas de aprender para ir mejorando día a día</li>                        
+            </ul>
+            <h5 class="text-center mb-4">Lenguajes de programación usados</h5>
+            <img src="imagenes/javascript-logo.png" alt="" class="img-fluid w-25">
+            <img src="imagenes/Csharp_Logo.png" alt="" class="img-fluid w-25">
+            <img src="imagenes/MySQL-Logo.png" alt="" class="img-fluid w-25">
+            <img src="imagenes/java.png" alt="" class="img-fluid w-25">
+            <img src="imagenes/HTML5.png" alt="" class="img-fluid w-25">
+            <img src="imagenes/python.png" alt="" class="img-fluid w-25">
+          </div> 
+          <div class="col-md">
+            <iframe class="rounded" width="660" height="515" src="https://www.youtube.com/embed/CYsP0UMk1ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portafolios -->
+    <section class="p-5" id="portafolios">
+      <h2 class="text-center text-bg-dark p-3 rounded ">Portafolios</h2>
+      <br>
+      <div class="container">
+        <div class="d-md-flex align-items-center justify-content-between">
+            <div class="col-md">
+                <h2>Página BootsTrap</h2>
+                <p class="lead">
+                    Desarrollar la logica de programacion orientada al framework de BootsTrap que posee muchas librerias, para facilitar más el desarrollo de paginas web
+                </p>                
+                <p>
+                  <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Más información del proyecto!</button>
+                </p>
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                  <div class="card card-body " style="max-width: 240px;">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">HTML, CSS, BootsTrap</li>
+                      <li class="list-group-item">Entregar a tiempo</li>                      
+                      <li class="list-group-item">Programador</li>                      
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <iframe class="rounded" width="560" height="315" src="https://www.youtube.com/embed/JV8sOTErVRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br>
+        <div class="container">
+          <div class="d-md-flex align-items-center justify-content-between">
+            <iframe class="rounded" width="560" height="315" src="https://www.youtube.com/embed/pRAD8i10gGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="col-md">
+                  <h2 class="text-end">Menu de Pizzas</h2>
+                  <p class="lead text-end">
+                      Desarrollar la logica de programacion orientada a C# creando un programa que permita captura las ordenes de pizza de los usuarios.
+                  </p>                
+                  <p class="position-relative">
+                    <br>
+                    <button class="btn btn-success position-absolute bottom-0 end-0" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample2">Más información del proyecto!</button>
+                  </p>
+                  <div class="collapse multi-collapse position-relative" id="multiCollapseExample3">
+                    <div class="card card-body position-absolute end-0" style="max-width: 240px;">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">C#, Visual Basic</li>
+                        <li class="list-group-item">Entregar un menú funcional</li>                      
+                        <li class="list-group-item">Programador/Diseñador</li>                      
+                      </ul>
+                    </div>
+                  </div>
+              </div>              
+          </div>
+        </div>
+        <br>
+        <div class="container">
+          <div class="d-md-flex align-items-center justify-content-between">
+              <div class="col-md">
+                  <h2>Inventario en Blockchain</h2>
+                  <p class="lead text-start">
+                      Crear un programa en Java NetBeans que permita hacer transferencias de dinero por medio de Wallet creadas mediante un servidor que es capaz de enviar información por bloques.
+                  </p>                
+                  <p>
+                    <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Más información del proyecto!</button>
+                  </p>
+                  <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body " style="max-width: 240px;">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Java, NetBeans</li>
+                        <li class="list-group-item">Crear conexión de base de datos</li>                      
+                        <li class="list-group-item">Programador, Tester, Diseñador</li>                      
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+              <iframe class="rounded" width="560" height="315" src="https://www.youtube.com/embed/5r-DxkeMgRA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+    </section>
+    <!-- Sección de comentarios, usando el poco conocimiento que tengo de JS. -->
+    <section class="p-5">
+      <h3 class="p-2">Dejame un comentario</h3>
+      <hr>
+      <main class="contenedor">
+        <section class="contenedor-agg-com">
+            <div class="imagen-user">
+                <img src="imagenes/maurirod.jpg"  class="rounded-circle" alt="user">
+            </div>
+            <div class="input-com">
+                <input type="text" id="nuevoComentario" placeholder="Escribe un nuevo comentario..." style="width:500px ; height:100px ;">
+                <div class="btn-agg p-5">
+                    <button onclick="nComentario()">Comentar</button>
+                </div>
+            </div>
+        </section>
+      </main>
+      <ul id="comentarios" class="contenedor-2 text-bg-warning"><h6>Se muestran los comentarios</h6></ul>
+    </section>
+    <!-- Pie de pagina -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+          <div class="lead">Copyright &copy; UNICAES <h5> Mauricio Antonio Rodríguez Jiménez</h5></div>
+      </div>
+      <a href="" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle-fill h1"></i>
+      </a>
+  </footer>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>   
+</html>
